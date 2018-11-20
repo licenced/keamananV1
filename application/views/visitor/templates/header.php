@@ -1,28 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" dir="ltr">
   <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>SecureOne</title>
-
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/bootstrap.css">
 
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/full-slider.css">
-
+    <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/bootstrap.css">
+    <script type="text/javascript" src="<?php echo base_url();?>/assets/js/bootstrap.js">
+    </script>
+    <meta charset="utf-8">
+    <title>SecureOne</title>
   </head>
-
   <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="<?php echo site_url('home'); ?>">
           <img src="<?php echo base_url().'assets/images/logo.png'?>" width = "20"> SecureOne</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" >
           <span class="navbar-toggler-icon"></span>
@@ -30,16 +24,22 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
+              <a class="nav-link" href="<?php echo site_url('home'); ?>">
+              <img src="<?php echo base_url().'assets/icon/home.png'?>" width = "20"> Home</a>
             </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="<?php echo site_url('home/index_artikel'); ?>">
+              <img src="<?php echo base_url().'assets/icon/article.png'?>" width = "20"> Article</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="<?php echo site_url('home/index_tools'); ?>">
+              <img src="<?php echo base_url().'assets/icon/tools.png'?>" width = "20"> Tools</a>
+            </li><li class="nav-item active">
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="<?php echo site_url('home/contact_us'); ?>">
+              <img src="<?php echo base_url().'assets/icon/contact_us.png'?>" width = "20"> Contact Us</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Admin</a>
-            </li>
+            
           </ul>
         </div>
       </div>
