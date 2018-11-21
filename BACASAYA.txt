@@ -1,0 +1,6 @@
+1. Clone Repository di folder (xampp/htdocs)
+2. Import DB_secureone.sql di phpMyadmin
+
+**Untuk mengakses sisi admin ketikkan URL = "localhost/keamananV1/login"**
+username : admin
+password : admin
