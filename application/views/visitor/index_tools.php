@@ -5,7 +5,9 @@
    $words = explode(" ",$string);
     return implode(" ",array_splice($words,0,$word_limit));
   } ?>
+    <?php foreach ($konten as $konten_item):?>
 
+<hr>
   <div class="row">
   <div class="col-md-7">
     <a href="#">
@@ -20,3 +22,11 @@
   </div>
 </div>
 <br>
+<?php endforeach; ?>
+<br>
+<div class="row">
+  <div class="col">
+    <?php echo $pagination; ?>
+  </div>
+</div>
+</div>
