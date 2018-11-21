@@ -3,6 +3,7 @@
 	<style>
 	 #semua{width:600px;height:1200px;margin:auto;overflow:hidden;background:#e0a504;overflow:hidden; text-align:20px; padding:10px 20px;}
 	 #left{width:300px;height:600px; float:left;}
+	 #right{width:300px;height:600px;float:right;}
 	 
 	 img.tengah {
      display: block;
@@ -76,6 +77,31 @@
 	<br>
 	
 	<button type="submit" class="btn btn-primary">Submit</button>
+	</div>
+
+	<div id="right">
+	<div class="form-group"> 
+	<img src="<?php echo base_url().'assets/images/form/1. ulo.jpg';?>" width = "200px" height = "150px">
+	<div class="checkbox">
+	<label><input type="checkbox" value="">Ulo</label>
+	</div>
+	<label for="jumlah"></label>
+	<div> <input type="number" min="0" id="replyNumber" data-bind="value:replyNumber" placeholder="Jumlah" />
+	</div>
+	</div>
+	<br>
+	
+	<div class="form-group"> 
+	<img src="<?php echo base_url().'assets/images/form/=2. TG.jpg.jpg';?>" width = "200px" height = "150px">
+	<div class="checkbox">
+	<label><input type="checkbox" value="">Taser Gun</label>
+	</div>
+	<label for="jumlah"></label>
+	<div> <input type="number" min="0" id="replyNumber" data-bind="value:replyNumber" placeholder="Jumlah" />
+	</div>
+	</div>
+	</div>
+	
 	</div>
 </form>
 </html>
