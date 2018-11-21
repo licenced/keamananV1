@@ -39,7 +39,7 @@
 
 	<div id="left">
 	<div class="form-group"> 
-	<img src= "<?php echo base_url().'assets/form/3. Alarm.jpg';?>" width = "200px" height = "150px">
+	<img src= "<?php echo base_url().'assets/images/form/3. Alarm.jpg';?>" width = "200px" height = "150px">
 	<div class="checkbox">
 	<label><input type="checkbox" value="">Alarm Anti Maling</label>
 	</div>
@@ -50,7 +50,7 @@
 	<br>
 	
 	<div class="form-group"> 
-	<img src= "<?php echo base_url().'assets/form/4. GA.jpg';?>" width = "200px" height = "150px">
+	<img src= "<?php echo base_url().'assets/images/form/4. GA.jpg';?>" width = "200px" height = "150px">
 	<div class="checkbox">
 	<label><input type="checkbox" value="">Gembok Alarm</label>
 	</div>
@@ -61,7 +61,7 @@
 	<br>
 	
 	<div class="form-group"> 
-	<img src="<?php echo base_url().'assets/form/5. PG.jpg';?>" width = "200px" height = "150px">
+	<img src="<?php echo base_url().'assets/images/form/5. PG.jpg';?>" width = "200px" height = "150px">
 	<div class="checkbox">
 	<label><input type="checkbox" value="">Pisau Gesper</label>
 	</div>
