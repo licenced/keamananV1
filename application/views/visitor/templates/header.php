@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/bootstrap.cssx">
 
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/full-slider.css">
@@ -38,7 +38,7 @@
             </li><li class="nav-item active">
             <li class="nav-item">
               <a class="nav-link" href="<?php echo site_url('home/contact_us'); ?>">
-              <img src="<?php echo base_url().'assets/icon/contact_us.png'?>" width = "20"> Contact Us</a>
+              <img src="<?php echo base_url().'assets/icon/pemesanan.png'?>" width = "20"> Pemesanan</a>
             </li>
             
           </ul>
