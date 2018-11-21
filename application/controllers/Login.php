@@ -6,12 +6,9 @@ class Login extends CI_Controller{
     }
 
     function index(){
-        $this->load->view('admin/register_admin');
+        $this->load->view('admin/login_admin');
     }
 
-    function form_login(){
-      $this->load->view('admin/login_admin');
-    }
     function auth(){
         $username=htmlspecialchars($this->input->post('username',TRUE),ENT_QUOTES);
         $password=htmlspecialchars($this->input->post('password',TRUE),ENT_QUOTES);
@@ -39,28 +36,6 @@ class Login extends CI_Controller{
          $this->session->sess_destroy();
          $url=base_url().'login';
          redirect($url);
-     }
-
-     function register(){
-       $repass = $this->input->post('re_pass');
-       if ($repass == $this->input->post('user_password') ) {
-         $user= array(
-           'nim' => $this->input->post('nim'),
-           'nama' => $this->input->post('nama'),
-           'username' => $this->input->post('user_name'),
-           'password' => md5($this->input->post('user_password'))
-         );
-
-         $cek_nim=$this->login_model->cek_nim($user['nim']);
-         if($cek_nim){
-           $this->login_model->register($user);
-           redirect('login/form_login');
-         }
-
-       } else {
-         echo $this->session->set_flashdata('msg','Password Tidak Sama');
-       }
-
      }
 
 }
