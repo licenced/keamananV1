@@ -18,7 +18,7 @@
           <div class="navbar-nav">
           <a class="nav-item nav-link" href="<?php echo base_url();?>post">Home <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="<?php echo base_url();?>post/new_post">Create Content</a>
-          <a class="nav-item nav-link" href="#">Pemesanan</a>
+          <a class="nav-item nav-link" href="<?php echo base_url();?>post/index_pemesanan">Pemesanan</a>
 		  <a class="nav-item nav-link" href="#">About</a>
           <a class="nav-item nav-link" href="<?php echo base_url().'/logout'?>">Logout</a>
         </div>
