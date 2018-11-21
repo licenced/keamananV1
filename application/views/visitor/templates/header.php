@@ -7,6 +7,7 @@
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/full-slider.css">
     <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/bootstrap.css">
+	<link rel="stylesheet" href="<?php echo base_url();?>/assets/css/artikel.css">
     <script type="text/javascript" src="<?php echo base_url();?>/assets/js/bootstrap.js">
     </script>
     <meta charset="utf-8">
