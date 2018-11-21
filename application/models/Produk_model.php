@@ -16,7 +16,7 @@ class Produk_model extends CI_Model{
 
 
 	public function simpanOrder($data){
-		$this->db->insert('pesanan', $data);
+		$this->db->insert('pemesan', $data);
 		$id = $this->db->insert_id();
 		return (isset($id)) ? $id : FALSE;
 	}
