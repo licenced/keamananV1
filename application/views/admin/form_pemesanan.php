@@ -18,20 +18,22 @@
               <tr>
                 <th scope="col">Nama</th>
                 <th scope="col">Email</th>
-				<th scope="col">Alamat</th>
+				        <th scope="col">Alamat</th>
                 <th scope="col">Tanggal Pemesanan</th>
-                
+                <th scope="col">Aksi</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-
-                
+                <td><?php echo $konten_item['nama']; ?></td>
+                <td><?php echo $konten_item['email']; ?></td>
+                <td><?php echo $konten_item['alamat']; ?></td>
+                <td><?php echo $konten_item['tanggal']; ?></td>
+                <td><a class="btn btn-primary" href="<?php echo site_url('post/pesanan/'.$konten_item['id']); ?>" role="button">Lihat Pesanan</a></td>
               </tr>
             </tbody>
           </table>
       <?php endforeach; ?>
-      <?php echo $pagination; ?>
     </div>
     </div>
   </div>
