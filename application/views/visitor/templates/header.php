@@ -37,10 +37,10 @@
               <img src="<?php echo base_url().'assets/icon/tools.png'?>" width = "20"> Tools</a>
             </li><li class="nav-item active">
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo site_url('home/contact_us'); ?>">
+              <a class="nav-link" href="<?php echo site_url('pemesanan'); ?>">
               <img src="<?php echo base_url().'assets/icon/pemesanan.png'?>" width = "20"> Pemesanan</a>
             </li>
-            
+
           </ul>
         </div>
       </div>
