@@ -9,6 +9,7 @@ class Post extends CI_Controller {
       redirect('login');
     }
     $this->load->model('post_model');
+    $this->load->model('produk_model');
     $this->load->helper('url_helper');
     $this->load->library('upload');
 
@@ -152,6 +153,21 @@ class Post extends CI_Controller {
     $this->post_model->delete_post($id);
     redirect('post');
   }
+
+  public function index_pemesanan(){
+    $data['konten'] = $this->produk_model->getCustomer();
+    $this->load->view('admin/templates/header');
+    $this->load->view('admin/form_pemesanan',$data);
+    $this->load->view('admin/templates/footer');
+  }
+
+  public function pesanan($id){
+    $data['konten'] = $this->produk_model->getPesanan($id);
+    $this->load->view('admin/templates/header');
+    $this->load->view('admin/tabel_pesanan',$data);
+    $this->load->view('admin/templates/footer');
+  }
+
 
 
 }

@@ -24,4 +24,15 @@ class Produk_model extends CI_Model{
 	public function simpanDetailorder($data){
 		$this->db->insert('detail_order',$data);
 	}
+
+	public function getCustomer(){
+		$sql = "SELECT * FROM pemesan";
+		return $this->db->query($sql)->result_array();
+	}
+
+	public function getPesanan($id){
+		$sql = "SELECT * FROM detail_order INNER JOIN pemesan ON detail_order.id_pemesan=pemesan.id WHERE id_pemesan = ?";
+		return $this->db->query($sql, array($id))->result_array();
+	}
+
 }
