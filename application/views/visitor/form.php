@@ -1,21 +1,10 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 <head>
-	<style>
-	 #semua{width:600px;height:1200px;margin:auto;overflow:hidden;background:#e0a504;overflow:hidden; text-align:20px; padding:10px 20px;}
-     #left{width:300px;height:300px; float:left;}
-	 #right{width:300px;height:300px;float:right;}
-
-	 img.tengah {
-     display: block;
-     margin-left: auto;
-     margin-right: auto;
-	 }
-
-
-</style>
-	<link href="form.css" rel="stylesheet" type="text/css">
-
-</head>
+    <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/cssform.css">
+    <meta charset="utf-8">
+    <title>SecureOne|Pemesanan</title>
+  </head>
 
 <form>
 
@@ -37,7 +26,7 @@
     <label for="">	<?php echo $product->nama ?></label>
   	<div> <p><?php echo $product->harga ?></p>
   	</div>
-    <a href='<?php echo site_url("cart/add/$product->id") ?>' >Add To Chart</a>
+    <button class = "button btn1" href='<?php echo site_url("cart/add/$product->id") ?>' >Add To Chart</button>
   	</div>
     </div>
   <?php } else { ?>
@@ -47,14 +36,14 @@
     <label for="">	<?php echo $product->nama ?></label>
     <div> <p><?php echo $product->harga ?></p>
     </div>
-    <a href='<?php echo site_url("cart/add/$product->id") ?>' >Add To Chart</a>
+    <button class = "button btn1" href='<?php echo site_url("cart/add/$product->id") ?>' >Add To Chart</button>
     </div>
     </div>
   <?php };
         $i++;
   ?>
   <?php endforeach ?>
-    <button class="button btnnext" href='<?php echo site_url("cart") ?>'>Next</button>
+    <button class="button btnnext" href='<?php echo site_url("cart") ?>'><span>Next </span></button>
 <?php else : ?>
   <p>Pilih produk dahulu.</p>
 <?php endif ?>
