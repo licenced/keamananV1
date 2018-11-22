@@ -54,7 +54,7 @@
         $i++;
   ?>
   <?php endforeach ?>
-    <a href='<?php echo site_url("cart") ?>' >Next</a>
+    <button class="btn btn-success" href='<?php echo site_url("cart") ?>' role ="button">Next</button>
 <?php else : ?>
   <p>Pilih produk dahulu.</p>
 <?php endif ?>
