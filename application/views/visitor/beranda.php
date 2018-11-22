@@ -6,7 +6,7 @@
     <title>SecureOne|Beranda</title>
     <meta name="description" content="Free Bootstrap Theme by uicookies.com">
     <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
-    
+
     <link href="https://fonts.googleapis.com/css?family=Inconsolata|Rubik:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo base_url();?>/assets/home/css/styles-merged.css">
     <link rel="stylesheet" href="<?php echo base_url();?>/assets/home/css/style.min.css">
@@ -46,13 +46,13 @@
       </div>
     </section>
   <!-- START: header -->
-  
+
   <div class="probootstrap-loader"></div>
 
   <header role="banner" class="probootstrap-header">
     <div class="container">
         <a href="index.html" class="probootstrap-logo">secureone<span>.</span></a>
-        
+
         <a href="#" class="probootstrap-burger-menu visible-xs" ><i>Menu</i></a>
         <div class="mobile-menu-overlay"></div>
 
@@ -61,7 +61,7 @@
             <li class="active"><a href="<?php echo site_url('home'); ?>">Home</a></li>
             <li><a href="<?php echo site_url('home/index_artikel'); ?>">Article</a></li>
             <li><a href="<?php echo site_url('home/index_tools'); ?>">Brand</a></li>
-            <li><a href="<?php echo site_url('home/contact_us'); ?>">Contact Us</a></li>
+            <li><a href="<?php echo site_url('pemesanan'); ?>">Pemesanan</a></li>
             <li><a href="<?php echo site_url('login'); ?>"></a></li>
           </ul>
           <div class="extra-text visible-xs">
@@ -76,7 +76,7 @@
         </nav>
     </div>
   </header>
-  <!-- END: header -->    
+  <!-- END: header -->
     <section class="probootstrap-half">
       <div class="image-wrap">
         <div class="image" style="background-image: url('<?php echo base_url();?>assets/home/img/slider_7new.jpg')"></div>
@@ -87,7 +87,7 @@
         <p>SecureOne adalah sebuah web yang berisi tentang penjualan barang - barang keamanan yang tidak dijual secara bebas.</p>
         <br>
         <p class="mb70">Seperti yang kita ketahui bersama bahwa dewasa ini sangat marak kasus - kasus kejahatan yang ada disekitar kita. Baik itu kasus perampokan, pencurian, pembegalan, dan lain sebagainya.</p>
-        
+
       </div>
     </section>
     <section class="probootstrap-half reverse">
@@ -188,7 +188,7 @@
                     <blockquote class="quote">&ldquo;Anda tidak pernah terlalu tua untuk menetapkan tujuan lain atau untuk bermimpi mimpi baru.&rdquo; <cite class="author">&mdash; Rodliyatun Nichlah Hidayati <br> <span>14116068 @rdlynichlah</span></cite></blockquote>
                   </div>
                 </div>
-                
+
               </div>
             </div>
           </div>
@@ -219,7 +219,7 @@
   <div class="gototop js-top">
     <a href="#" class="js-gotop"><i class="icon-chevron-thin-up"></i></a>
   </div>
-  
+
 
   <script src="<?php echo base_url();?>/assets/home/js/scripts.min.js"></script>
   <script src="<?php echo base_url();?>/assets/home/js/main.min.js"></script>

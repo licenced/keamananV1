@@ -27,7 +27,7 @@
               </tr>
               <<?php $total = $total + $subtotal ?>
               <?php endforeach; ?>
-              <td class=""><strong>Total : <? echo "Rp ".number_format($total, 2, ",", ".") ?></strong></td>
+              <td class=""><strong>Total : <?php echo "Rp ".number_format($total, 2, ",", ".") ?></strong></td>
             </tbody>
           </table>
 

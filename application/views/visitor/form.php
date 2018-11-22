@@ -26,38 +26,38 @@
 
 
 
-  <? if (!empty($product_list)): ?>
-  <? foreach($product_list as $product): ?>
-  <?
+  <?php if (!empty($product_list)): ?>
+  <?php foreach($product_list as $product): ?>
+  <?php
   $i = 0;
   if($i%2==0){?>
     <div id="left">
     <div class="form-group">
   	<img src="<?php echo base_url();?>assets/images/form/<?php echo $product->foto; ?>" width = "200px" height = "150px"><br>
-    <label for="">	<? echo $product->nama ?></label>
-  	<div> <p><? echo $product->harga ?></p>
+    <label for="">	<?php echo $product->nama ?></label>
+  	<div> <p><?php echo $product->harga ?></p>
   	</div>
-    <a href='<? echo site_url("cart/add/$product->id") ?>' >Add To Chart</a>
+    <a href='<?php echo site_url("cart/add/$product->id") ?>' >Add To Chart</a>
   	</div>
     </div>
-  <?php }else { ?>
+  <?php } else { ?>
     <div id="right">
     <div class="form-group">
     <img src="<?php echo base_url();?>assets/images/form/<?php echo $product->foto; ?>" width = "200px" height = "150px">
-    <label for="">	<? echo $product->nama ?></label>
-    <div> <p><? echo $product->harga ?></p>
+    <label for="">	<?php echo $product->nama ?></label>
+    <div> <p><?php echo $product->harga ?></p>
     </div>
-    <a href='<? echo site_url("cart/add/$product->id") ?>' >Add To Chart</a>
+    <a href='<?php echo site_url("cart/add/$product->id") ?>' >Add To Chart</a>
     </div>
     </div>
   <?php };
         $i++;
   ?>
-  <? endforeach ?>
-    <a href='<? echo site_url("cart") ?>' >Next</a>
-<? else : ?>
+  <?php endforeach ?>
+    <a href='<?php echo site_url("cart") ?>' >Next</a>
+<?php else : ?>
   <p>Pilih produk dahulu.</p>
-<? endif ?>
+<?php endif ?>
 
 </form>
 </html>
