@@ -5,17 +5,18 @@
     <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/bootstrap.cssx">
 
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/full-slider.css">
+    <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/full-slider.css"> 
     <link rel="stylesheet" href="<?php echo base_url();?>/assets/css/bootstrap.css">
 	<link rel="stylesheet" href="<?php echo base_url();?>/assets/css/artikel.css">
+		<link rel="stylesheet" href="<?php echo base_url();?>/assets/css/tools.css">
     <script type="text/javascript" src="<?php echo base_url();?>/assets/js/bootstrap.js">
     </script>
-    <meta charset="utf-8">
+    <meta charset="utf-5">
     <title>SecureOne</title>
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top">
       <div class="container">
         <a class="navbar-brand" href="<?php echo site_url('home'); ?>">
           <img src="<?php echo base_url().'assets/images/logo.png'?>" width = "20"> SecureOne</a>
