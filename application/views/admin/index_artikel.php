@@ -27,17 +27,16 @@
             </thead>
             <tbody>
               <tr>
-                <td>
-                  <a class="btn btn-primary" href="<?php echo site_url('post/update/'.$konten_item['id']); ?>" role="button">Edit</a><br><br>
-                  <a class="btn btn-primary" href="<?php echo site_url('post/delete/'.$konten_item['id']); ?>" role="button">Delete</a>
-                </td>
                 <th scope="row"><?php echo $konten_item['id']; ?></th>
                 <td><a href="<?php echo site_url('home/view/'.$konten_item['slug']); ?>"><?php echo $konten_item['title']; ?></a></td>
                 <td><?php echo $konten_item['category'] ?></td>
                 <td><?php echo $konten_item['created'] ?></td>
                 <td><?php echo limit_words($konten_item['text'], 5)."...";?></td>
                 <td><?php echo $konten_item['foto']; ?></td>
-                
+                <td>
+                  <a class="btn btn-primary" href="<?php echo site_url('post/update/'.$konten_item['id']); ?>" role="button">Edit</a><br><br>
+                  <a class="btn btn-primary" href="<?php echo site_url('post/delete/'.$konten_item['id']); ?>" role="button">Delete</a>
+                </td>
               </tr>
             </tbody>
           </table>
