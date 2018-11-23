@@ -26,7 +26,7 @@
     <label for="">	<?php echo $product->nama ?></label>
   	<div> <p><?php echo $product->harga ?></p>
   	</div>
-    <button class = "button btn1" href='<?php echo site_url("cart/add/$product->id") ?>' >Add To Chart</button>
+    <a href="<?php echo site_url("cart/add/$product->id") ?>"class = "button btn1" role = "button" = "true" >Add To Chart</a>
   	</div>
     </div>
   <?php } else { ?>
@@ -36,14 +36,15 @@
     <label for="">	<?php echo $product->nama ?></label>
     <div> <p><?php echo $product->harga ?></p>
     </div>
-    <button class = "button btn1" href='<?php echo site_url("cart/add/$product->id") ?>' >Add To Chart</button>
+    <a href="<?php echo site_url("cart/add/$product->id") ?>"class = "button btn1" role = "button" = "true" >Add To Chart</a>
     </div>
     </div>
   <?php };
         $i++;
   ?>
   <?php endforeach ?>
-    <button class="button btnnext" href='<?php echo site_url("cart") ?>'><span>Next </span></button>
+    <a href="<?php echo site_url("cart") ?>"class="button btnnext" role="button"="true"><span>Next </span></a></br>
+    <a href="<?php echo site_url("home") ?>"class="button btn1" role="button"="true"><span>Kembali</span></a>
 <?php else : ?>
   <p>Pilih produk dahulu.</p>
 <?php endif ?>
